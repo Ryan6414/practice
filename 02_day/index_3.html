@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../img/mi.ico">
+    <!-- 1.head 引入 -->
+    <!--优点是快,不需要单独http请求,适合用于首页.  -->
+<!--     
+    <style>
+
+        div{
+            color: red;
+        }
+
+    </style> -->
+
+<!-- 2.外部引入 -->
+<!-- 优点:使代码整洁,多个页面复用.缺点:怎加服务器请求数,使服务器压力大.维护差 -->
+<link rel="stylesheet" href="mian.css">
+
+</head>
+<body>
+    <!-- 3.标签内引入 -->
+    <!-- 行内优先级最高> head中谁离代码近就谁优先 -->
+  <div style="color:salmon;" >hello</div>  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #nav{
+      /* border: 1px red solid; */
+    }
+
+    /* 后代选择器,同名的后代可以延申至孙乃至无限延申 */
+    #nav span{
+      /* 设置字体大小 */
+      font-size: 14px;
+      /* 设置字体下换线 */
+      text-decoration: underline;
+    }
+    .red-text{
+      color:red;
+    }
+    .bold-text{
+      /* 字体加粗 */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- div#nav>span*9 -->
+  <div id="nav">
+    <span class="red-text bold-text">抗击疫情</span>
+    <span class="bold-text">新闻</span>
+    <span class="bold-text">hao123</span>
+    <span class="bold-text">地图</span>
+    <span class="bold-text">视频</span>
+    <span class="bold-text">贴吧</span>
+    <span class="bold-text">学术</span>
+    <span>登录</span>
+    <span>设置</span>
+  </div>
+
+  <span>更多设置</span>
+</body>
+<ml>

@@ -1,0 +1,5 @@
+/* 选择器用于选中需要改变样式的html */
+div{
+    color: rgb(47, 0, 255);
+    font-size: 30px;
+}
