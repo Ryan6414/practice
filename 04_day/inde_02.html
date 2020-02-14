@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mian{
+        font-size: 22px;
+    }
+
+    /* 权值为1 */
+    span{            
+        font-size: 12px;
+    }
+</style>
+
+<body>
+    <div id="mian">
+        中国abc
+        <span>中国</span>
+        <!-- 继承的权值小于1.可以认为0.1 ,所以他不会用#mian里的继承字体大小,而是用span{}里的字体大小 -->
+    </div>
+</body>
+</html>
