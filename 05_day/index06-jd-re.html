@@ -1,0 +1,110 @@
+<!-- 练习：day3京单个产品图制作 -->
+<!-- 知识点：利用border构造三角形+行内框图形排列 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        var,
+        strong,
+        em {
+            font-size: 400;
+            font-weight: normal;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .product {
+           
+            border: 1px solid red;
+            background-color: white;
+            width: 200px;
+            height: 260px;
+            text-align: center;
+            
+            /* line-height: 0px; */
+        }
+
+        .product img {
+            width: 160px;
+            height: 160px;
+            margin-top: 10px;
+        }
+
+       .p-desc {
+            font-size: 14px;
+            margin: 14px 0 8px;
+
+
+        }
+
+        .p-desc em {
+            font-style: normal;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* 以下本练习的重点 */
+         .p-price {
+            font-size: 12px;
+            border: 1px solid red;
+            width: 110px;  /*110 */
+            height: 20px;
+            /* line-height: 0px; */
+            /* margin: auto; */
+            vertical-align: middle;
+            /* 行内块 */
+            display: inline-block;  
+        }
+
+         .p-price var {
+            display: inline-block;
+            color: white;
+            width: 50PX;
+            height: 21px;    /* 这里被撑开了1个像素 */
+            line-height: 21px;
+            font-style: normal;
+            font-weight: bold;
+            background-color: red;
+            /* vertical-align: middle; */
+        }
+
+        .p-price span {
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid red;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 5px solid red;
+            position: absolute;
+            vertical-align: middle;
+        }
+
+         .p-price em {
+            display: inline-block;
+            color: silver;
+            font-style: normal;
+            line-height: 20px;
+            width: 60PX;
+            text-decoration: line-through;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product">
+        <img
+            src="https://img13.360buyimg.com/mobilecms/s280x280_jfs/t7882/18/1978280852/391325/42be25bd/59a680b2N536552d3.jpg.webp" />
+        <div class="p-desc">超级<em>飞侠</em>书包</div>
+        <div class="p-price">
+            <var>￥49.00</var><span></span><em>￥89.00</em>
+        </div>
+    </div>
+</body>
+
+</html>

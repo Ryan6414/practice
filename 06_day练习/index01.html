@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mian em,
+        #mian var,
+        #mian i,
+        #mian strong {
+            font-style: normal;
+            font-size: 16px;
+            font-weight: normal;
+
+        }
+
+        #mian {
+            margin: auto;
+            border: 1px solid red;
+            background-color: white;
+            width: 200px;
+            height: 260px;
+            text-align: center;
+        }
+
+        #mian img {
+            width: 160px;
+            height: 160px;
+        }
+
+        .title {
+
+            margin: 10px auto;
+        }
+
+        .title em {
+            color: red;
+        }
+
+        .bute {
+            display: inline-block;
+            border: 1px solid red;
+            vertical-align: middle;
+            height: 20px;
+            line-height: 0px;
+        }
+
+        .border-m {
+            height: 0;
+            width: 0;
+            border-top: 10px solid red;
+            border-right: 6px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-top-width: 10px;
+            border-bottom-width: 10px;
+            border-left: 6px solid red;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .m-4 {
+            
+            /* 这是chrome正常显示的代码 */
+            /* background-color: red;
+            font-size: 16px;
+            vertical-align: middle;
+            color: white; */
+            
+            /*这是火狐正常显示的代码*/
+            background-color: red;
+            font-size: 16px;
+            vertical-align: middle;
+            color:  white;
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+
+        }
+
+        .bute i {
+
+            vertical-align: middle;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mian">
+        <img
+            src="https://img13.360buyimg.com/mobilecms/s280x280_jfs/t7882/18/1978280852/391325/42be25bd/59a680b2N536552d3.jpg.webp" />
+        <div class="title">
+            超级<em>飞侠</em>书包</div>
+        <div class="bute">
+            <var class="m-4">￥49.00</var><span class="border-m"></span><i>￥89.00</i>
+
+        </div>
+    </div>
+</body>
+
+</html>
