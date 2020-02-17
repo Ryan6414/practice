@@ -1,0 +1,166 @@
+/* public-class */
+.public-w{
+    width: 1226px;   
+    margin-right: auto;
+    margin-left: auto;
+    /* border:1px red solid; */
+}
+
+/* top - title  start */
+#top-nav-bg{
+    background-color: #333;
+    height: 40px;
+}
+
+/* top-title-width */
+ .top-w-h{
+    height: inherit;
+    overflow: hidden;
+}
+
+/* top-title-left */
+#top-nav-bg .top-nav{
+    float: left;
+}
+
+/* top-title-li-| */
+#top-nav-bg .top-nav li i, .top-right-l li i{
+    margin: auto 3.6px;
+    font-size: 1px;
+    color: rgb(66,60,65);
+}
+
+/* top-title-li-text */
+ .top-nav li, .top-right-l li{
+    float: left;
+    color:rgb(176,176,176);
+    font-size: 12px;
+    line-height: 40px;
+    height:inherit;
+}
+/* top-title-hover */
+.top-nav  li:hover, .top-right-l li:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+/* top-title-right */
+#top-nav-bg .top-right-l{
+    float: right;   
+}
+
+/* shoping-bg */
+.top-right-l  .top-right-shop-bg {
+    display: block;
+    background-color:rgb(66,66,66);
+    height: inherit;
+    margin-left:15px ;
+    width: 120px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-right-l  .top-right-shop-bg:hover{
+   background-color: white;
+   color: rgb(255,103,0);
+
+}
+
+/* top-title -end-  */
+
+/* product-title-statr */
+
+#product-title{
+    height: 100px;  
+    /* border:1px red solid; */
+}
+
+/* p-logo */
+#product-title .p-t .p-left{
+    background: url(//s02.mifile.cn/assets/static/image/mi-logo.png) no-repeat 50% 50%;
+    float: left;
+    background-color:rgb(255,103,0) ;
+    height:55px;
+    width: 55px;
+    margin-top: 22px;   
+    transition: all 0.3s ease-in-out;;
+}
+#product-title .p-t .p-left:hover {
+    background: url(//s02.mifile.cn/assets/static/image/mi-home.png) no-repeat 50% 50%;
+    background-color:rgb(255,103,0) ;
+ 
+}
+
+/* title-center-meu */
+#product-title .p-t .p-center{
+    float: left ;
+    height: inherit;
+}
+
+#product-title .p-t .p-center ul li{
+    float: left ;
+    height: initial;  
+    line-height: 100px;
+    padding-right: 15px;
+    font-size: 16px;
+    color: rgb(51,51,51);
+}
+
+#product-title .p-t .p-center ul li:hover{
+    color: rgb(255,103,0);
+}
+
+#product-title .p-t .p-center ul .l-w{
+    width: 127px;
+}
+
+#product-title .p-t .p-center ul .l-w span{
+        visibility: hidden;
+}
+
+
+/* title-right */
+#product-title .p-t .p-right{
+    height: inherit;
+    float: right;
+    margin-top: 27px ;
+    
+}
+/* form - text menu */
+#product-title .p-t .p-right form{
+    width: 223px;
+    height: 45px;
+    border:1px rgb(224,224,224) solid;
+    float: left;
+    line-height: 45px;
+    text-align: right;
+    padding-right: 20px;
+    color: rgb(224,224,224) ;
+    font-weight: 100;   
+}
+
+#product-title .p-t .p-right button{
+    display: inline-block;
+    height: 47px;
+    width: 47px;
+    background-color: white;    
+    border-left:0px!important;
+    border:1px  rgb(224,224,224) solid;  
+    color: rgb(97,97,97);
+}   
+#product-title .p-t .p-right button:hover{
+    background-color:rgb(255,103,0);
+    color: white;
+    border:1px solid rgb(255,103,0) ;
+}
+
+#product-title .p-t .p-right  form  i{
+    font-size: 12px;
+    color:  rgb(97,97,97);
+    font-weight: 200;
+    font-style: normal;
+    background-color: rgb(238,238,238);
+}
+    /* product-title-end */
+
+
