@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#f5f5f5;
+    }
+    #main{
+        width: 234px;
+        height: 300px;
+        background-color: white;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .t-o{
+        width: 234px;
+        height: 60px;
+        background-color: orangered;
+        position: absolute;
+        left: 0;
+        top: 300px;  
+        transition: 0.5s ease;    
+    }
+
+    #mian:hover .t-o{
+          transform: translateY(-60px);
+    }
+
+</style>
+<body>
+    <div id="main">
+        <div class="t-o"></div>
+    </div>
+</body>
+</html>

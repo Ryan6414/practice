@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #main{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    margin:0 auto;
+
+    
+  }
+
+  /* [1]定义动画 */
+  @keyframes shakeAni{
+    0%{
+      transform: translateX(0);
+    }
+    20%{
+      transform: translateX(-10px);
+    }
+    40%{
+      transform: translateX(0);
+    }
+    60%{
+      transform: translateX(10px);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+
+  #main:hover{
+
+    /* [2]应用动画 */
+    animation-name: shakeAni;
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+
+  }
+  </style>
+</head>
+<body>
+  <div id="main"></div>
+</body>
+<html>

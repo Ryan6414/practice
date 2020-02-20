@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #music {
+            width: 224px;
+            height: 567px;
+            border: 1px blue solid;
+            overflow: hidden;
+        }
+
+        #m-bg {
+            width: 224px;
+            height: 567px;
+            background-image: url("https://y.gtimg.cn/mediastyle/yqq/img/bg_index_top.jpg?max_age=2592000&v=3beef369200a0863560787fd560c8205") ;
+            transition: 0.35s ease;
+            
+            
+        }
+
+        #music:hover #m-bg {
+            transform: scale(1.03, 1.03);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="music">
+        <div id="m-bg"></div>
+    </div>
+</body>
+<html>

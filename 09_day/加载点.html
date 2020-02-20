@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+/* 初始化ul */
+       #mian  ul, #mian li{
+            list-style: none;           
+            padding:0;
+        }
+
+     #mian{
+            
+            width: 300px;
+            height: 300px;
+            border: 1px red solid;
+            text-align: center;
+            margin: auto ;
+     }
+
+     #mian ul{
+            margin-top: 125px ;
+     }
+
+     #mian ul li{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border-radius: 10px;
+            margin-left: 15px;                  
+     }
+
+#mian .a{
+             animation-timing-function:cubic-bezier(.73,0,1,1,1.85);
+             animation-iteration-count:infinite;
+             animation:li 1s linear infinite 0.1s; 
+           
+}
+
+#mian .b{
+            animation-timing-function: cubic-bezier(0,1,1,1.85);
+            animation-iteration-count:infinite;
+            animation:li 1s linear infinite 0.2s ; 
+}
+
+#mian .c{
+            animation-timing-function: cubic-bezier(0,1,1,1.85);
+            animation-iteration-count:infinite;
+            animation:li 1s linear infinite 0.3s; 
+}
+
+#mian .d{
+            animation-timing-function: cubic-bezier(0,1,1,1.85);
+            animation-iteration-count:infinite;
+            animation:li 1s linear infinite 0.4s; 
+}
+
+#mian .e{
+            animation-timing-function: cubic-bezier(0,1,1,1.85);
+            animation-iteration-count:infinite;
+            animation:li 1s linear infinite 0.5s; 
+}
+     @keyframes li{
+              0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(88px);
+            }
+
+            50% {
+                transform: translateY(50px);
+            }
+
+            75% {
+                transform: translateY(-25px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="mian">
+        <ul>
+            <li class="a"></li>
+            <li class="b"></li>
+            <li class="c"></li>
+            <li class="d"></li>
+            <li class="e"></li>
+        </ul>
+    </div>
+
+</body>
+</html>

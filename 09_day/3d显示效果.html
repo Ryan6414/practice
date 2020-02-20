@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #f5f5f5;
+    }
+    #main{
+      width: 300px;
+      height: 300px;
+      border:1px rgb(0, 0, 0) solid;
+      margin:50px auto;
+
+      /* [1]main 作为3D场景，必须设置景深 */
+      perspective: 600px;
+      /* [2]设置场景下的元素以3d形式显示 */
+      transform-style:preserve-3d;
+    }
+    
+    #main #sub1{
+      background-color: yellow;
+      font-size: 100%;
+      transition: 2.35s ease;
+      transform:rotateY(60deg);
+      transform-style:preserve-3d;
+      margin-top:180px;
+    }
+
+
+    
+    #main:hover #sub1{
+      /* 3d变换时：旋转时坐标轴发生变化 */
+      transform:rotateY(1deg);
+       transform:rotateX(-180deg);
+
+    }
+    #sub2{
+      background-color: rgb(212, 152, 212);
+      transform:translateZ(50px);
+    }
+
+
+   
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="sub1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      <div id="sub2">
+        hello world hello world
+      </div>
+    </div>
+  </div>
+</body>
+<html>

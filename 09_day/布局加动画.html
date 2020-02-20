@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            height: 400px;
+            width: 100px;
+            border: 1px red solid;
+        }
+
+        #a .b{
+            background-color: pink;
+            height: 100px;
+            width: 100px;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            /* overflow: hidden; */
+            margin-bottom: 100px;
+        }
+
+        #a .b:hover .c {
+            transform:rotate(-90deg);
+        }
+
+        #a .c{
+                border-radius: 5px;
+                transform-origin: 0px 0px;
+                background-color: chocolate;
+                color: white;
+                line-height: 100px;
+                text-align: center;
+                   height: 100px;
+                width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a">
+        <div class="b">one</div>
+        <div class="c"></div>
+        <div class="b">str</div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

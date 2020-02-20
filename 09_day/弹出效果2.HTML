@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #f5f5f5;
+    }
+   #main{
+     width: 234px;
+     height: 300px;
+     background-color: white;
+     margin:0 auto;
+     position: relative;
+     overflow: hidden;
+   }
+   #find{
+     background-color: tomato;
+     width: 1px;
+     height: 20px;
+     position: absolute;
+     left:115px;
+     top:300px;
+     transition: 0.35s ease;
+   }
+   #main:hover #find{
+      transform:scaleX(50) translateY(-100px);
+   }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div id="find"></div>
+  </div>
+</body>
+<html>
