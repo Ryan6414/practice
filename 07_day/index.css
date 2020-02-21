@@ -10,6 +10,7 @@
 #top-nav-bg{
     background-color: #333;
     height: 40px;
+    position: relative;
 }
 
 /* top-title-width */
@@ -41,6 +42,14 @@
 /* top-title-hover */
 .top-nav  li:hover, .top-right-l li:hover{
     color: rgb(255, 255, 255);
+    position: absolute;
+    background-color: lightcoral;
+    height: 30px;
+    height: 30px;
+    top: 30px;
+    right: 40px;
+    display: ;
+
 }
 
 
@@ -57,12 +66,21 @@
     margin-left:15px ;
     width: 120px;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+  
 }
 
-.top-right-l  .top-right-shop-bg:hover{
+.top-right-l  .top-right-shop-bg  #w-heddin {
+    height: 30px ;
+    width: 50px;
+    background-color: ivory;
+    visibility: hidden;
+    right: 0px;
+    
+}
+
+.top-right-l  .top-right-shop-bg:hover {
    background-color: white;
-   color: rgb(255,103,0);
+   visibility: visible;
 
 }
 
